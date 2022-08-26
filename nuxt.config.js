@@ -22,9 +22,8 @@ export default {
         { hid: 'og:locale', property: 'og:locale', content: 'ja_JP' },
         { hid: 'og:site_name', property: 'og:site_name', content: 'ポートフォリオサイト' },
         { hid: 'og:title', property: 'og:title', content: 'portfolio_site' },
-        { hid: 'og:image', property: 'og:image', content: '' },
+        { hid: 'og:image', property: 'og:image', content: '/20220909_screenshot.png' },
         { hid: 'og:description', property: 'og:description', content: 'このサイトはSugimoto Kazumasaのポートフォリオサイトです。' },
-        /* { hid: 'og:url', property: 'og:url', content: 'https://61ab7cfb.portfolio-site-4kg.pages.dev/' + `${this.$route.path}` }, */
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/MyIcon.ico' }],
   },
