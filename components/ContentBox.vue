@@ -46,6 +46,7 @@ export default {
     padding:10px;
     border-top: solid 3px #e0e0e0;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    
 }
 .lang{
   color:#000000;
@@ -66,7 +67,7 @@ export default {
     height: 5vh;
   }
   .textBox{
-    height: 10vh;
+    height: 20vh;
   }
 }
 </style>
