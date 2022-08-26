@@ -151,7 +151,6 @@
     </div>
       
       
-      
       <!-- <div class="flex justify-center pt-4 space-x-2">
         
         
@@ -270,10 +269,6 @@ img{
   margin: 0 20px;
 }
 
-img{
-  margin: 0 20px;
-}
-
 #indent{
   text-indent:2em;
   font-weight:bold;
@@ -338,5 +333,4 @@ img{
 
 /*animation */
 
-</style>
 </style>
