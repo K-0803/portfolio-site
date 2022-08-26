@@ -1,6 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
-  <div id = "TOP"
+  <div 
+    id = "TOP"
     class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0"
   >
     <link
@@ -52,7 +53,7 @@
           />
         </svg>
       </a> -->
-      <div  class="mt-20 bg-white overflow-hidden shadow sm:rounded-lg p-6">
+      <div  class="pageSize mt-20 mb-10 bg-white overflow-hidden shadow sm:rounded-lg p-6">
         <div class = "access m-auto overflow-hidden shadow p-5" >
           <div class = "nav">
           <SquareBox color1 = "#7c0202" text = "TOP"/>
@@ -61,9 +62,8 @@
           <SquareBox color1 = "#7c0202" text = "Works"/>
           <SquareBox color1 = "#7c0202" text = "Others"/>
         </div>
-      </div>
-      <div>
-        <h1 class="text-2xl leading-7 font-semibold">
+        <div>
+        <h1 class="text-4xl mb-5 leading-7 font-semibold">
           Welcome to my portfolio site!!
         </h1>        
         <p class="mt-3 text-gray-600">
@@ -82,45 +82,39 @@
         <div id = "About" class = "marginSet"></div>
         <div class = "mt-4 pt-4 text-gray-800 border-t border-dashed">
           <div id = "about_link">
-          <h3  class = "l_title">About</h3>
-          <ul>
-            <li class = "s_title">名前</li>
-            <p>杉本 和賢 （スギモト カズマサ）</p><br>
-            <li class = "s_title">性別</li>
-            <p>男</p><br>
-            <li class = "s_title">生年月日</li>
-            <p>1999/08/03</p><br>
-            <li class = "s_title">趣味</li>
-            <p>読書・プログラミング言語の勉強</p><br>
-          </ul>
+            <h3  class = "l_title">About</h3>
+            <ul>
+              <li class = "s_title">名前</li>
+              <p>杉本 和賢 （スギモト カズマサ）</p><br>
+              <li class = "s_title">性別</li>
+              <p>男</p><br>
+              <li class = "s_title">生年月日</li>
+              <p>1999/08/03</p><br>
+              <li class = "s_title">趣味</li>
+              <p>読書・プログラミング言語の勉強</p><br>
+            </ul>
             
           
           </div>
         </div>
         <div id = "Skills" class = "marginSet"></div>
         <div class = "mt-4 pt-4 text-gray-800 border-t border-dashed">
-          <div>
           <h3 class = "l_title">Skills</h3>
           <p class = m_title>習得言語</p>
-          <ul>
-            <li class = "s_title">C</li>
-            <p>初めてプログラミングで触れた言語。そのため使用頻度はある程度高く、知識も人並みにある。</p><br>
-            <li class = "s_title">Java</li>
-            <p>専門学校の授業で使用。簡単なものまでは作成できるが、多態性などの応用分野に若干難あり。</p><br>
-            <li class = "s_title">HTML,CSS,JavaScript</li>
-            <p>こちらも専門学校で使用。CSSは苦手だが、全体的に人並みの知識を持っている</p><br>
-            <li class = "s_title">SQL</li>
-            <p>こちらも専門学校で使用。データベース作成に必要な知識は一通りある。</p><br>
-            <br>
-            <p class = m_title>勉強中or触れたことのある言語</p>
-            <li class = "s_title">Python</li>
-            <p>言わずと知れたインタプリタ型言語。個人的に強く興味を持った言語であり、最近私が勉強し始めた言語でもある。</p><br>
-            <li class = "s_title">C#</li>
-            <p>一時期ゲームを作りたくてUnityを触っており、その際に使用していた言語。数年前に使ったきりのため、現在使えるかは不明。</p><br>
-            <li class = "s_title">Google Apps Script</li>
-            <p>実習の一環で少しだけ触れた言語。ほぼ扱えないが、「触れたことのある言語」ということで記載。</p><br>
-          </ul>
-          
+          <br>
+          <div class = "nav2">
+          <ContentBox lang = "C" text = "初めてプログラミングで触れた言語。そのため使用頻度はある程度高く、知識も人並みにある。"/>
+          <ContentBox lang = "Java" text = "専門学校の授業で使用。簡単なものまでは作成できるが、多態性などの応用分野に若干難あり。"/>
+          <ContentBox lang = "HTML,CSS,JavaScript" text = "こちらも専門学校で使用。CSSは苦手だが、全体的に人並みの知識を持っている。"/>
+          <ContentBox lang = "SQL" text = "こちらも専門学校で使用。データベース作成に必要な知識は一通りある。"/>
+          </div>
+          <br>
+          <p class = m_title>勉強中 or 触れたことのある言語</p>
+          <br>
+          <div class = "nav2">
+          <ContentBox lang = "Python" text = "言わずと知れたインタプリタ型言語。個人的に強く興味を持った言語であり、最近私が勉強し始めた言語でもある。"/>
+          <ContentBox lang = "C#" text = "一時期ゲームを作りたくてUnityを触っており、その際に使用していた言語。数年前に使ったきりのため、現在使えるかは不明。"/>
+          <ContentBox lang = "Google Apps Script" text = "実習の一環で少しだけ触れた言語。ほぼ扱えないが、「触れたことのある言語」ということで記載。"/>
           </div>
         </div>
         <div id = "Works" class = "marginSet"></div>
@@ -129,7 +123,7 @@
           <ul>
             <li class = "s_title">404NotFoundページ作成</li>
             <p>実習で作成。動きは少ないが、個人的には気に入っている。</p>
-            <p>実際に作成したはこちら⇒<a id = "indent" href = "https://github.com/">404NotFoundページ</a></p><br>
+            <p>実際に作成したものはこちら⇒<a id = "indent" href = "../../../404-page/404.html">404NotFoundページ</a></p><br>
             <p class = "s_title">その他、今後増える！はず</p>
           </ul>
           
@@ -138,7 +132,10 @@
         <div id = "Others" class = "marginSet"></div>
         <div class = "mt-4 pt-4 text-gray-800 border-t border-dashed">
           <h3 class = "l_title">Others</h3>
-          <p>ここに記入ここに記入ここに記入<br>
+          <br><p>Sugimoto Kazumasa githubアカウントは<a id = "indent" href = "https://github.com/">こちらから</a></p><br>
+            <p>ご連絡の際はこちらから⇒hogehogefugafuga@gmail.com</p><br>
+            <p></p><br>
+           <!--  ここに記入ここに記入ここに記入<br>
             ここに記入ここに記入ここに記入<br>
             ここに記入ここに記入ここに記入<br>
             ここに記入ここに記入ここに記入<br>
@@ -154,16 +151,13 @@
             ここに記入ここに記入ここに記入<br>
             ここに記入ここに記入ここに記入<br>
             ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-          </p>
+            ここに記入ここに記入ここに記入<br> -->
+          
+        </div>
         </div>
       </div>
-      </div>
       
-      <div class="flex justify-center pt-4 space-x-2">
+      <!-- <div class="flex justify-center pt-4 space-x-2">
         <a href="https://github.com/" target="_blank"
           ><svg
             class="w-6 h-6 text-gray-600 hover:text-gray-800 button--github"
@@ -201,7 +195,7 @@
           </svg>
         </a>
         
-      </div>
+      </div> -->
       
       
 
@@ -210,18 +204,25 @@
 </template>
 
 <script>
-/* import Component from '~/components/SquareBox.vue'; */
+import ContentBox from './ContentBox.vue';
+
+/* import ContentBox from './ContentBox.vue';
+import Component from '~/SquareBox.vue'; */
 export default {
-  name: 'NuxtTutorial',
-  data(){
-    return{
-      
-    }
-  }
+    name: "NuxtTutorial",
+    data() {
+        return {
+
+        };
+    },
+    components: { ContentBox }
 }
 </script>
 
 <style>
+.pageSize{
+  width: 610px;
+}
 h1{
   text-align: center;
 }
@@ -229,7 +230,13 @@ h1{
 .nav{
   display: flex;
   justify-content: center;
-  
+}
+.nav2{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .access{
   position: fixed;
@@ -242,28 +249,6 @@ h1{
 
 .marginSet{
   margin-bottom: 4em;
-}
-.access{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.relative{
-  background-image: url(20220826_screenshot.png);
-  background-attachment: fixed;
-}
-
-.l_title{
-  font-size: 35px;
-}
-.m_title{
-  font-size: 20px;
-}
-.s_title{
-  font-size: 20px;
-  font-weight:bold;
 }
 
 .relative{
@@ -295,5 +280,6 @@ h1{
   list-style: disc;
   margin-left: 15px;
 }
-
+/*animation */
+</style>
 </style>

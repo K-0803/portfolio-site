@@ -28,8 +28,10 @@ export default {
 
 <style>
 .square{
-  margin: 0 20px 0 20px;
+  margin: 0 10px 0 10px;
+  cursor: pointer;
 }
+
 .square p {
   display: flex;
   justify-content: space-between;
@@ -60,10 +62,19 @@ export default {
   box-shadow: 0 2px 0 #aaaaaa;
 }
 
-.text{
-  text-align: center;
-  color:#d3d3d3;
-  font-size: 25px;
+}
+
+.square p::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+.square p:hover {
+  transform: translateY(3px);
+  text-decoration: none;
+  box-shadow: 0 2px 0 #aaaaaa;
 }
 
 </style>
