@@ -53,16 +53,16 @@
         </svg>
       </a> -->
       <div  class="mt-20 bg-white overflow-hidden shadow sm:rounded-lg p-6">
-      <div class = "access  bg-white overflow-hidden shadow p-4" >
+        <div class = "access m-auto overflow-hidden shadow p-5" >
           <div class = "nav">
           <SquareBox color1 = "#7c0202" text = "TOP"/>
           <SquareBox color1 = "#7c0202" text = "About"/>
           <SquareBox color1 = "#7c0202" text = "Skills"/>
           <SquareBox color1 = "#7c0202" text = "Works"/>
           <SquareBox color1 = "#7c0202" text = "Others"/>
-          </div>
         </div>
-        <div>
+      </div>
+      <div>
         <h1 class="text-2xl leading-7 font-semibold">
           Welcome to my portfolio site!!
         </h1>        
@@ -79,61 +79,65 @@
           <br>ここはSugimoto Kazumasaのポートフォリオサイトです。<br>
           習得スキル内容やこれまでに作成した作品がなどが掲載されています。
         </p>
-        <br>
+        <div id = "About" class = "marginSet"></div>
         <div class = "mt-4 pt-4 text-gray-800 border-t border-dashed">
           <div id = "about_link">
-          <h3 id = "About" class = "l_title">About</h3>
-          <p>ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-          </p>
+          <h3  class = "l_title">About</h3>
+          <ul>
+            <li class = "s_title">名前</li>
+            <p>杉本 和賢 （スギモト カズマサ）</p><br>
+            <li class = "s_title">性別</li>
+            <p>男</p><br>
+            <li class = "s_title">生年月日</li>
+            <p>1999/08/03</p><br>
+            <li class = "s_title">趣味</li>
+            <p>読書・プログラミング言語の勉強</p><br>
+          </ul>
+            
+          
           </div>
         </div>
+        <div id = "Skills" class = "marginSet"></div>
         <div class = "mt-4 pt-4 text-gray-800 border-t border-dashed">
           <div>
-          <h3 id = "Skills" class = "l_title">Skills</h3>
+          <h3 class = "l_title">Skills</h3>
           <p class = m_title>習得言語</p>
-          <p class = "s_title">C</p>
-          <p>初めてプログラミングで触れた言語。そのため使用頻度はある程度高く、知識も人並みにある。</p><br>
-          <p class = "s_title">Java</p>
-          <p>専門学校の授業で使用。簡単なものまでは作成できるが、多態性などの応用分野に若干難あり。</p><br>
-          <p class = "s_title">HTML,CSS,JavaScript</p>
-          <p>こちらも専門学校で使用。CSSは苦手だが、全体的に人並みの知識を持っている</p><br>
-          <p class = "s_title">SQL</p>
-          <p>こちらも専門学校で使用。データベース作成に必要な知識は一通りある。</p><br>
-          <br>
-          <p class = m_title>勉強中or触れたことのある言語</p>
-          <p class = "s_title">Python</p>
-          <p></p><br>
-          <p class = "s_title">C#</p>
-          <p></p><br>
-          <p class = "s_title">Google Apps Script</p>
-          <p></p><br>
+          <ul>
+            <li class = "s_title">C</li>
+            <p>初めてプログラミングで触れた言語。そのため使用頻度はある程度高く、知識も人並みにある。</p><br>
+            <li class = "s_title">Java</li>
+            <p>専門学校の授業で使用。簡単なものまでは作成できるが、多態性などの応用分野に若干難あり。</p><br>
+            <li class = "s_title">HTML,CSS,JavaScript</li>
+            <p>こちらも専門学校で使用。CSSは苦手だが、全体的に人並みの知識を持っている</p><br>
+            <li class = "s_title">SQL</li>
+            <p>こちらも専門学校で使用。データベース作成に必要な知識は一通りある。</p><br>
+            <br>
+            <p class = m_title>勉強中or触れたことのある言語</p>
+            <li class = "s_title">Python</li>
+            <p>言わずと知れたインタプリタ型言語。個人的に強く興味を持った言語であり、最近私が勉強し始めた言語でもある。</p><br>
+            <li class = "s_title">C#</li>
+            <p>一時期ゲームを作りたくてUnityを触っており、その際に使用していた言語。数年前に使ったきりのため、現在使えるかは不明。</p><br>
+            <li class = "s_title">Google Apps Script</li>
+            <p>実習の一環で少しだけ触れた言語。ほぼ扱えないが、「触れたことのある言語」ということで記載。</p><br>
+          </ul>
+          
           </div>
         </div>
+        <div id = "Works" class = "marginSet"></div>
         <div class = "mt-4 pt-4 text-gray-800 border-t border-dashed">
-          <h3 id = "Works" class = "l_title">Works</h3>
-          <p>ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-            ここに記入ここに記入ここに記入<br>
-          </p>
+          <h3 class = "l_title">Works</h3>
+          <ul>
+            <li class = "s_title">404NotFoundページ作成</li>
+            <p>実習で作成。動きは少ないが、個人的には気に入っている。</p>
+            <p>実際に作成したはこちら⇒<a id = "indent" href = "https://github.com/">404NotFoundページ</a></p><br>
+            <p class = "s_title">その他、今後増える！はず</p>
+          </ul>
+          
+         
         </div>
+        <div id = "Others" class = "marginSet"></div>
         <div class = "mt-4 pt-4 text-gray-800 border-t border-dashed">
-          <h3 id = "Others" class = "l_title">Others</h3>
+          <h3 class = "l_title">Others</h3>
           <p>ここに記入ここに記入ここに記入<br>
             ここに記入ここに記入ここに記入<br>
             ここに記入ここに記入ここに記入<br>
@@ -224,7 +228,20 @@ h1{
 
 .nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  
+}
+.access{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: dimgray;
+  opacity: 0.9;
+}
+
+.marginSet{
+  margin-bottom: 4em;
 }
 .access{
   position: fixed;
@@ -250,7 +267,33 @@ h1{
 }
 
 .relative{
-  background-image: url(20220826_screenshot.png)
+  background-image: url(20220826_screenshot.png);
+  background-attachment: fixed;
+}
+
+#indent{
+  text-indent:2em;
+  font-weight:bold;
+  color: #ff0000;
+}
+/* #indent:visited{
+  color: #7c0202;
+} */
+#indent:hover{
+  text-decoration: underline;
+}
+
+.l_title{
+  font-size: 35px;
+}
+.m_title{
+  font-size: 20px;
+}
+.s_title{
+  font-size: 20px;
+  font-weight:bold;
+  list-style: disc;
+  margin-left: 15px;
 }
 
 </style>
