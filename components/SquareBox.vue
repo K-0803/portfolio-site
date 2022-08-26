@@ -1,8 +1,9 @@
 <template>
 <div 
         class = "square"
-        :style = "{background: activeColor, content:anyText}"
-        @click = "changeColor">
+        :style = "{background: activeColor}"
+        @click = "MovePage">
+        <p class = "text">{{ text }}</p>
       </div>
 
 </template>
@@ -18,13 +19,13 @@ export default {
     }
   },
   methods:{
-    changeColor(){
+    MovePage(){
       /* if(this.activeColor === this.color1){
-        this.activeColor = this.color2
+        
       }else if(this.activeColor === this.color2){
-        this.activeColor = this.color3
+        
       }else{
-        this.activeColor = this.color1
+        
       } */
     }
   },
@@ -33,8 +34,14 @@ export default {
 
 <style>
 .square{
-  width: 75px;
-  height: 50px;
+  width: 100px;
+  height: 40px;
+}
+
+.text{
+  text-align: center;
+  color:#d3d3d3;
+  font-size: 25px;
 }
 
 </style>
