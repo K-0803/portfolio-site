@@ -55,7 +55,7 @@
         </svg>
       </a> -->
       
-      <div  class="pageSize mt-20 mb-10 bg-white overflow-hidden shadow sm:rounded-lg p-6">
+      <div  class="pageSize mt-20  bg-white overflow-hidden shadow sm:rounded-lg p-6">
       <div class = "access overflow-hidden shadow" >
         <div class = "menu">
           <button type = "button" class = "menu-button" v-on:click="open = !open">
@@ -150,14 +150,15 @@
             <p></p><br>
                     
         </div>
+        
       </div>
-    </div>
+    </div>  
       
       
-      <!-- <div class="flex justify-center pt-4 space-x-2">
+      <div class="flex justify-center pt-3 pb-3 space-x-2">
+        <p>© 2022 Kazumasa Sugimoto</p>
         
-        
-        <a href="https://twitter.com/nuxt_js" target="_blank"
+        <!-- <a href="https://twitter.com/nuxt_js" target="_blank"
           ><svg
             class="w-6 h-6 text-gray-600 hover:text-gray-800"
             xmlns="http://www.w3.org/2000/svg"
@@ -174,9 +175,9 @@
               fill="currentColor"
             />
           </svg>
-        </a>
+        </a> -->
         
-      </div> -->
+      </div>
       
       
 
@@ -294,7 +295,7 @@ h1{
 }
 
 .relative{
-  background: url(static/umi_1.png) no-repeat fixed;
+  background: url(static/ocean_1.png) no-repeat bottom fixed;
 }
 
 img{
@@ -360,9 +361,9 @@ img{
     font-size: 15px;
   }
 }
-/* @media screen and (min-height: 1079px){
+/* @media screen and (min-width: 490px){
   .relative{
-    zoom: 150%;
+    
   }
 } */
 
