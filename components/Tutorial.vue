@@ -60,6 +60,9 @@
         <div class = "menu">
           <button type = "button" class = "menu-button" v-on:click="open = !open">
             <i aria-hidden="true"></i>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
           <div class = "nav" v-bind:class="{'is-active':open}">
             <SquareBox color1 = "#7c0202" text = "TOP"/>
@@ -117,7 +120,7 @@
           <ContentBox lang = "SQL" text = "こちらも専門学校で使用。データベース作成に必要な知識は一通りある。"/>
           </div>
           <br>
-          <p class = m_title>勉強中 or 触れたことのある言語</p>
+          <br><p class = m_title>勉強中 or 触れたことのある言語</p>
           <br>
           <div class = "nav2">
           <ContentBox lang = "Python" text = "言わずと知れたインタプリタ型言語。個人的に強く興味を持った言語であり、最近私が勉強し始めた言語でもある。"/>
@@ -210,7 +213,17 @@ export default {
   opacity: 0.97;
 }
 /* .menu{
+  
 }  */
+/* .menu__item{
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+} */
+
 .menu-button{
   position: fixed;
   top: 20px;
@@ -221,8 +234,27 @@ export default {
   display: flex;
   justify-content:center;
   align-items: center;
-  background:#333333;
+  background:#ffffff;
   color:#ffffff;
+  border: 3px #555 solid;
+}
+.menu-button span{
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    height: 3px;
+    border-radius: 2px;
+  background: #555;
+    width: 50%;
+  }
+.menu-button span:nth-of-type(1) {
+  top:7px; 
+}
+.menu-button span:nth-of-type(2) {
+  top:15px;
+}
+.menu-button span:nth-of-type(3) {
+  top:23px;
 }
 .nav.is-active{
   transform: translateX(0);
@@ -240,10 +272,10 @@ export default {
   width:100vw;
   height:15vh;
   display:flex;
-  
+  background: #555;
   align-items: center;
   
-  background: #555;
+  
 }
 .nav2{
   display:flex;
@@ -293,8 +325,9 @@ img{
   list-style: disc;
   margin-left: 15px;
 }
+
 /*レスポンシブデザイン*/
-@media screen and (max-width: 620px){
+@media screen and (max-width: 490px){
   .pageSize{
     width: 90%;
     margin: 0 auto;

@@ -57,7 +57,7 @@ export default {
 }
 
 /*レスポンシブデザイン*/
-@media screen and (max-width: 620px){
+@media screen and (max-width: 490px){
   .aaaa p{
     width: 60vw;
     

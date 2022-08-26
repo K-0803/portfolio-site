@@ -69,7 +69,7 @@ export default {
 }
 
 /*レスポンシブデザイン*/
-@media screen and (max-width: 620px){
+@media screen and (max-width: 490px){
   .square{
     width: 30vw;
     height: 5vh;
