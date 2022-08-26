@@ -62,33 +62,28 @@ export default {
   box-shadow: 0 2px 0 #aaaaaa;
 }
 
-}
-
-.square p::after {
-  content: '';
-  width: 5px;
-  height: 5px;
-  border-top: 3px solid #333333;
-  border-right: 3px solid #333333;
-  transform: rotate(45deg);
-.square p:hover {
-  transform: translateY(3px);
-  text-decoration: none;
-  box-shadow: 0 2px 0 #aaaaaa;
+.text{
+  text-align: center;
+  color:#d3d3d3;
+  font-size: 25px;
 }
 
 /*レスポンシブデザイン*/
 @media screen and (max-width: 620px){
   .square{
-    width: 18%;
+    width: 30vw;
+    height: 5vh;
   }
   .square p{
     width: 100%;
     padding: 5% 15%;
-    font-size: 18%;
+    font-size: 120%;
   }
   .square p::after{
     display: none;
+  }
+  .text{
+    height:5vh;
   }
 }
 

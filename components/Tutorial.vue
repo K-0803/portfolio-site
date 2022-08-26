@@ -56,16 +56,21 @@
       </a> -->
       
       <div  class="pageSize mt-20 mb-10 bg-white overflow-hidden shadow sm:rounded-lg p-6">
-        <div class = "access m-auto overflow-hidden shadow p-5" >
-          <div class = "nav">
-          <SquareBox color1 = "#7c0202" text = "TOP"/>
-          <SquareBox color1 = "#7c0202" text = "About"/>
-          <SquareBox color1 = "#7c0202" text = "Skills"/>
-          <SquareBox color1 = "#7c0202" text = "Works"/>
-          <SquareBox color1 = "#7c0202" text = "Others"/>
+      <div class = "access overflow-hidden shadow" >
+        <div class = "menu">
+          <button type = "button" class = "menu-button" v-on:click="open = !open">
+            <i aria-hidden="true"></i>
+          </button>
+          <div class = "nav" v-bind:class="{'is-active':open}">
+            <SquareBox color1 = "#7c0202" text = "TOP"/>
+            <SquareBox color1 = "#7c0202" text = "About"/>
+            <SquareBox color1 = "#7c0202" text = "Skills"/>
+            <SquareBox color1 = "#7c0202" text = "Works"/>
+            <SquareBox color1 = "#7c0202" text = "Others"/>
           </div>
         </div>
-        <div class = "textArea">
+      </div>
+      <div class = "textArea">
         <h1 class="text-4xl mb-5 leading-7 font-semibold">
           Welcome to my portfolio site!!
         </h1>        
@@ -142,8 +147,9 @@
             <p></p><br>
                     
         </div>
-        </div>
       </div>
+    </div>
+      
       
       
       <!-- <div class="flex justify-center pt-4 space-x-2">
@@ -185,8 +191,8 @@ export default {
     name: "NuxtTutorial",
     data() {
         return {
-
-        };
+          open: false,
+        }
     },
     components: { ContentBox }
 }
@@ -202,11 +208,43 @@ export default {
   left: 0;
   width: 100%;
   background: dimgray;
-  opacity: 0.9;
+  opacity: 0.97;
+}
+/* .menu{
+}  */
+.menu-button{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background:#333333;
+  color:#ffffff;
+}
+.nav.is-active{
+  transform: translateX(0);
 }
 .nav{
+  position:fixed;
+  top:0;
+  left:0;
   display: flex;
   justify-content: center;
+  transform: translateX(-100vw);
+  transition: all .3s linear;
+  
+  z-index: 1;
+  width:100vw;
+  height:15vh;
+  display:flex;
+  
+  align-items: center;
+  
+  background: #555;
 }
 .nav2{
   display:flex;
@@ -221,12 +259,15 @@ h1{
 }
 
 .marginSet{
-  margin-bottom: 4em;
+  margin-bottom: 5em;
 }
 
 .relative{
-  background-image: url(20220826_screenshot.png);
-  background-attachment: fixed;
+  background: url(static/umi_1.png) no-repeat fixed;
+}
+
+img{
+  margin: 0 20px;
 }
 
 img{
@@ -271,8 +312,11 @@ img{
     width: 100%;
   }
   .nav{
-    width: 90%;
+    width: 100vw;
+    height: 50vh;
     margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
   }
   /* .nav2{
     width: 50%;
@@ -280,7 +324,17 @@ img{
   .textArea{
     font-size: 50%;
   }
+  .menu-button{
+    width:10vw;
+    height:10vw;
+    
+  }
 }
+/* @media screen and (min-height: 1079px){
+  .relative{
+    zoom: 150%;
+  }
+} */
 
 /*animation */
 
