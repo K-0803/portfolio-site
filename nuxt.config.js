@@ -18,6 +18,9 @@ export default {
         { hid: 'description', name: 'description', content: 'このサイトはSugimoto Kazumasaのポートフォリオサイトです。' },
         { name: 'format-detection', content: 'telephone=no' },
         
+        { hid: 'og:type', property: 'og:type', content: ' website' },
+        { hid: 'og:locale', property: 'og:locale', content: 'ja_JP' },
+        { hid: 'og:site_name', property: 'og:site_name', content: 'ポートフォリオサイト' },
         { hid: 'og:title', property: 'og:title', content: 'portfolio_site' },
         { hid: 'og:image', property: 'og:image', content: '' },
         { hid: 'og:description', property: 'og:description', content: 'このサイトはSugimoto Kazumasaのポートフォリオサイトです。' },
