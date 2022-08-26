@@ -2,9 +2,9 @@
 <div 
         class = "square"
         :style = "{background: activeColor}"
-        @click = "MovePage">
+        @click = "movePage">
         <p class = "text">{{ text }}</p>
-      </div>
+</div>
 
 </template>
 
@@ -15,18 +15,12 @@ export default {
   data(){
     return{
       activeColor: this.color1,
-      anyText: this.text,
+      /* anyText: this.text, */
     }
   },
   methods:{
-    MovePage(){
-      /* if(this.activeColor === this.color1){
-        
-      }else if(this.activeColor === this.color2){
-        
-      }else{
-        
-      } */
+    movePage(){
+      window.location.href = '#' + this.text;
     }
   },
 }
@@ -36,6 +30,12 @@ export default {
 .square{
   width: 100px;
   height: 40px;
+}
+
+.text{
+  text-align: center;
+  color:#d3d3d3;
+  font-size: 25px;
 }
 
 .text{
