@@ -22,7 +22,7 @@ export default {
         { hid: 'og:locale', property: 'og:locale', content: 'ja_JP' },
         { hid: 'og:site_name', property: 'og:site_name', content: 'ポートフォリオサイト' },
         { hid: 'og:title', property: 'og:title', content: 'portfolio_site' },
-        { hid: 'og:image', property: 'og:image', content: '/20220909_screenshot.png' },
+        { hid: 'og:image', property: 'og:image', content: '/20220909_img.png' },
         { hid: 'og:description', property: 'og:description', content: 'このサイトはSugimoto Kazumasaのポートフォリオサイトです。' },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/MyIcon.ico' }],
