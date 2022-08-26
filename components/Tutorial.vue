@@ -151,7 +151,7 @@
         <div id = "Others" class = "marginSet"></div>
         <div class = "mt-4 pt-4 text-gray-800 border-t border-dashed">
           <h3 class = "l_title">Others</h3>
-          <br><p>Sugimoto Kazumasa githubアカウントはこちら
+          <br><div class = "gitIcon"><p>Sugimoto Kazumasa githubアカウントはこちら⇒ </p>
             <span>
             <a href="https://github.com/K-0803" target="_blank"
             ><svg 
@@ -167,7 +167,8 @@
             </svg>
             </a>
             </span>
-          </p><br>
+          </div>
+          <br>
             <p>ご連絡の際はこちらから<br>⇒public1024.1bro.ks@gmail.com</p><br>
             <p></p><br>
                     
@@ -347,6 +348,11 @@ img{
   font-weight:bold;
   list-style: disc;
   margin-left: 15px;
+}
+
+.gitIcon{
+  display: flex;
+  align-items: center;
 }
 
 /*レスポンシブデザイン*/
