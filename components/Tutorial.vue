@@ -71,7 +71,7 @@
         </div>
       </div>
       <div class = "textArea">
-        <h1 class="text-4xl mb-5 leading-7 font-semibold">
+        <h1 class="sentence text-4xl mb-5 leading-7 font-semibold">
           Welcome to my portfolio site!!
         </h1>        
         <p class="mt-3 text-gray-600">
@@ -83,7 +83,7 @@
             >
             </a> -->
         </p>
-        <p class="mt-4 text-gray-800 border-t border-dashed">
+        <p class="sentence mt-4 text-gray-800 border-t border-dashed">
           <br>ここはSugimoto Kazumasaのポートフォリオサイトです。<br>
           習得スキル内容やこれまでに作成した作品がなどが掲載されています。
         </p>
@@ -93,13 +93,13 @@
             <h3  class = "l_title">About</h3>
             <ul>
               <li class = "s_title">名前</li>
-              <p>杉本 和賢 （スギモト カズマサ）</p><br>
+              <p class = "sentence">杉本 和賢 （スギモト カズマサ）</p><br>
               <li class = "s_title">性別</li>
-              <p>男</p><br>
+              <p class = "sentence">男</p><br>
               <li class = "s_title">生年月日</li>
-              <p>1999/08/03</p><br>
+              <p class = "sentence">1999/08/03</p><br>
               <li class = "s_title">趣味</li>
-              <p>読書・プログラミング言語の勉強</p><br>
+              <p class = "sentence">読書・プログラミング言語の勉強</p><br>
             </ul>
             
           
@@ -321,8 +321,10 @@ img{
   }
   .menu-button{
     width:10vw;
-    height:10vw;
-    
+    height:10vw; 
+  }
+  p{
+    font-size: 15px;
   }
 }
 /* @media screen and (min-height: 1079px){
