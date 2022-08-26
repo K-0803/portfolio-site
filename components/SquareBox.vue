@@ -77,4 +77,19 @@ export default {
   box-shadow: 0 2px 0 #aaaaaa;
 }
 
+/*レスポンシブデザイン*/
+@media screen and (max-width: 620px){
+  .square{
+    width: 18%;
+  }
+  .square p{
+    width: 100%;
+    padding: 5% 15%;
+    font-size: 18%;
+  }
+  .square p::after{
+    display: none;
+  }
+}
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class = "aaaa">
              <p class = "contentBox"
              @mouseover = "popUpWindow"
              @mouseleave = "deleteWindow">{{message}}</p>
@@ -28,12 +28,6 @@ export default {
 }
 </script>
 <style>
-/* .flexBox{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
 .contentBox{
     height: 50px;
     width: 300px;
@@ -59,5 +53,20 @@ export default {
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+/*レスポンシブデザイン*/
+@media screen and (max-width: 620px){
+  .aaaa p{
+    width: 60vw;
+    
+  }
+  .contentBox{
+    font-size: 2vh;
+    height: 5vh;
+  }
+  .textBox{
+    height: 10vh;
+  }
 }
 </style>

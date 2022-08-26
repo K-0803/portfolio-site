@@ -1,0 +1,137 @@
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 479px) {
+  .wrapper{
+    width: auto;
+    padding: 0 10px;
+  }
+}
+
+body{
+  background: -moz-radial-gradient(#ffffff, #000000);
+  background: -webkit-radial-gradient(#ffffff, #000000); 
+  background: radial-gradient(#ffffff, #000000);
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 479px) {
+  body{
+    font-size: 10px;
+  }
+}
+
+body::after{
+  content:"";
+  background: #000000;
+  -webkit-transition: opacity .8s ease;  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity .8s ease;
+  -moz-transition: opacity .8s ease;
+  transition: opacity .8s ease;
+}
+
+.text{
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height : 100vh;
+}
+@media screen and (max-width: 479px) {
+  .text{
+    font-size: 10px;
+  }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+.flash {
+    animation: flash .03s infinite;
+  }
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: .8;
+    }
+  }
+  .skew {
+    animation: skew 3s infinite;
+  }
+  @keyframes skew {
+    0% {
+      transform: none;
+    }
+    33% {
+      transform: none;
+    }
+    33.3% {
+      transform: skewX(30deg);
+    }
+    33.6% {
+      transform: skewX(-30deg);
+    }
+    33.9% {
+      transform: none;
+    }
+    66% {
+      transform: none;
+    }
+    66.3% {
+      transform: skewX(5deg);
+    }
+    66.6% {
+      transform: skewX(-5deg);
+    }
+    66.9% {
+      transform: none;
+    }
+    77% {
+      transform: none;
+    }
+    77.3% {
+      transform: skewX(15deg);
+    }
+    77.6% {
+      transform: skewX(-15deg);
+    }
+    77.9% {
+      transform: none;
+    }
+  }
+  .glitch {
+    animation: glitch .3s both infinite;
+  }
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    12.5% {
+      transform: translate(-1px, 1px);
+    }
+    37.5% {
+      transform: translate(-1px, -1px);
+    }
+    62.5% {
+      transform: translate(1px, 1px);
+    }
+    87.5% {
+      transform: translate(1px, -1px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
