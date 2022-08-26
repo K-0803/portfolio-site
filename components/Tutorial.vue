@@ -168,7 +168,7 @@
             </a>
           </div>
           <br>
-            <p>ご連絡の際はこちらから<br>⇒public1024.1bro.ks@gmail.com</p><br>
+            <p>ご連絡の際はこちらから<br>⇒<a id = "indent" href = "mailto:public1024.1bro.ks@gmail.com">メールへ移動します</a></p><br>
             <p></p><br>
                     
         </div>
