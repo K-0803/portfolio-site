@@ -96,7 +96,7 @@
             <h3  class = "l_title">About</h3>
             <ul>
               <li class = "s_title">名前</li>
-              <p>杉本 和賢 （スギモト カズマサ）</p><br>
+              <p>秦 和賢 （ハタ カズマサ）</p><br>
               <li class = "s_title">性別</li>
               <p>男</p><br>
               <li class = "s_title">生年月日</li>
